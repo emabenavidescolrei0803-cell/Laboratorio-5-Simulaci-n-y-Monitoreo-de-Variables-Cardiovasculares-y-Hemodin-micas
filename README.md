@@ -17,9 +17,11 @@ El monitor de signos vitales uMEC 100 opera normalmente en el modo de monitoriza
 
 El Pronk OxSim OX-1 es un simulador óptico diseñado para verificar el funcionamiento de sistemas de oximetría de pulso. Este equipo permite simular tres variables fisiológicas fundamentales: la saturación de oxígeno (SpO₂), la frecuencia cardíaca y el índice de perfusión. Estas simulaciones permiten comprobar la capacidad de respuesta y la exactitud de los monitores de signos vitales y oxímetros de pulso.
 
-* Saturación de oxígeno (SpO₂): representa el porcentaje de hemoglobina arterial que se encuentra transportando oxígeno. Es un indicador ampliamente utilizado para evaluar el estado de oxigenación del paciente. El OxSim OX-1 puede generar simulaciones de saturación entre distintos valores preestablecidos, incluyendo 85 %, 95 %, 98 % y 99 %, permitiendo verificar la respuesta del monitor ante diferentes condiciones clínicas.
-* Frecuencia cardíaca (Heart Rate): corresponde al número de latidos cardíacos por minuto. Este parámetro permite comprobar si el monitor es capaz de detectar correctamente ritmos cardíacos lentos, normales o rápidos. El simulador puede generar frecuencias cardíacas de 40, 80 y 140 latidos por minuto (bpm).
-* Índice de perfusión (Perfusion Index, PI): es una medida de la intensidad de la señal pulsátil detectada por el sensor de oximetría y está relacionada con la perfusión sanguínea periférica. El equipo puede simular condiciones de perfusión normal (PI ≈ 2.0) y de baja perfusión (PI ≈ 0.2), lo que permite evaluar el desempeño del monitor en situaciones donde la señal fisiológica es débil.
+- **Saturación de oxígeno (SpO₂):**  representa el porcentaje de hemoglobina arterial que se encuentra transportando oxígeno. Es un indicador ampliamente utilizado para evaluar el estado de oxigenación del paciente. El OxSim OX-1 puede generar simulaciones de saturación entre distintos valores preestablecidos, incluyendo 85 %, 95 %, 98 % y 99 %, permitiendo verificar la respuesta del monitor ante diferentes condiciones clínicas.
+
+- **Frecuencia cardíaca (Heart Rate):** corresponde al número de latidos cardíacos por minuto. Este parámetro permite comprobar si el monitor es capaz de detectar correctamente ritmos cardíacos lentos, normales o rápidos. El simulador puede generar frecuencias cardíacas de 40, 80 y 140 latidos por minuto (bpm).
+
+- **Índice de perfusión (Perfusion Index, PI):** es una medida de la intensidad de la señal pulsátil detectada por el sensor de oximetría y está relacionada con la perfusión sanguínea periférica. El equipo puede simular condiciones de perfusión normal (PI ≈ 2.0) y de baja perfusión (PI ≈ 0.2), lo que permite evaluar el desempeño del monitor en situaciones donde la señal fisiológica es débil.
 
 ##
 ***¿Cuáles son las tolerancias o errores máximos permitidos (EMP) para cada parámetro fisiológico?***
@@ -33,7 +35,22 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 ## Parte B 
 
 
+## Preguntas 
+
+***Pregunta 1: ¿Cuál es el principio de operación del Pronk OxSim OX-1 para simular una onda pulsátil?***
+
+El Pronk OxSim OX-1 funciona mediante un principio de simulación óptica, reproduciendo las señales luminosas que normalmente atravesarían un tejido biológico durante la medición de la oximetría de pulso. El dispositivo genera variaciones controladas en la absorción de luz roja e infrarroja, imitando los cambios producidos por el flujo sanguíneo arterial durante cada latido cardíaco. De esta manera, el monitor interpreta la señal generada por el simulador como si proviniera de un paciente real, permitiendo verificar la medición de saturación de oxígeno (SpO₂), frecuencia cardíaca e índice de perfusión.
+
+***Pregunta 2: ¿Por qué la SpO2 baja puede ser un falso positivo (falsa alarma) en una situación de mala perfusión?***
+
+La medición de la SpO₂ depende de la detección de una señal pulsátil adecuada en los tejidos periféricos. Cuando existe mala perfusión periférica, el flujo sanguíneo arterial disminuye y la señal pulsátil captada por el sensor se vuelve débil. En estas condiciones, el oxímetro puede tener dificultades para diferenciar la señal arterial del ruido generado por movimientos, interferencias eléctricas o baja amplitud de la señal. Como consecuencia, el monitor puede mostrar valores de saturación artificialmente bajos, aunque la oxigenación real del paciente sea normal, generando una falsa alarma o un falso positivo de hipoxemia. Por esta razón, la baja perfusión constituye una de las principales fuentes de error en la oximetría de pulso.
+  
+
 ## Conclusiones 
+
+
+
+## Bibliografías 
 [1] Mindray Bio-Medical Electronics Co., Ltd., uMEC10/uMEC12/uMEC15 Patient Monitor Operator's Manual, Shenzhen, China, 2016. Disponible en ManualsLib
 [2] Pronk Technologies, OX-1 OxSim® Optical SpO₂ Pulse Oximeter Simulator - Product Specifications, Pronk Technologies Inc.
 [3] Pronk Technologies, OX-1 OxSim Optical SpO₂ Simulator Specifications, MedWrench Equipment Database.
