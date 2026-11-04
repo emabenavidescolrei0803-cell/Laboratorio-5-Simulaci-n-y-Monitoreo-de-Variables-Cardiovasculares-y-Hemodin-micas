@@ -51,7 +51,10 @@ La medición de la SpO₂ depende de la detección de una señal pulsátil adecu
 
 
 ## Bibliografías 
-[1] Mindray Bio-Medical Electronics Co., Ltd., uMEC10/uMEC12/uMEC15 Patient Monitor Operator's Manual, Shenzhen, China, 2016. Disponible en ManualsLib
+[1] Mindray Bio-Medical Electronics Co., Ltd., uMEC10/uMEC12/uMEC15 Patient Monitor Operator's Manual, Shenzhen, China, 2016. Disponible en ManualsLib.
+
 [2] Pronk Technologies, OX-1 OxSim® Optical SpO₂ Pulse Oximeter Simulator - Product Specifications, Pronk Technologies Inc.
+
 [3] Pronk Technologies, OX-1 OxSim Optical SpO₂ Simulator Specifications, MedWrench Equipment Database.
+
 [4] Mindray, Monitor de pacientes uMEC, especificaciones y descripción del producto, Mindray Medical International.
