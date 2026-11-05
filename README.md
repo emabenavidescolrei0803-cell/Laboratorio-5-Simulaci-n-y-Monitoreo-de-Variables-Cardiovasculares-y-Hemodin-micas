@@ -37,13 +37,19 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 ***Video Prueba 1 (40 BPM / 95 %):***
 
 ##
-***Video Prueba  (80 BPM / 85 %):***
+***Video Prueba 2 (80 BPM / 85 %):***
+
+[Prueba 2.zip](https://github.com/user-attachments/files/34406323/Prueba.2.zip)
 
 ##
-***Video Prueba  (Low Perfusion / 99 %):***
+***Video Prueba 3 (Low Perfusion / 99 %):***
+
+[Prueba 3.zip](https://github.com/user-attachments/files/34406324/Prueba.3.zip)
 
 ##
-***Video Prueba  (140 BPM / 98 %):***
+***Video Prueba 4 (140 BPM / 98 %):***
+
+[Prueba 4.zip](https://github.com/user-attachments/files/34406322/Prueba.4.zip)
 
 ##
 ***Tabla de verificación de alarmas:***
