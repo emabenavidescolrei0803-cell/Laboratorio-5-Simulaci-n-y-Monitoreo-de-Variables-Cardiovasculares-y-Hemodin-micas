@@ -34,16 +34,16 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 
 ## Parte B 
 
-***Video Prueba 1 (40 BOM / 85 %):***
+***Video Prueba 1 (40 BPM / 95 %):***
 
 ##
-***Video Prueba  (40 BOM / 85 %):***
+***Video Prueba  (80 BPM / 85 %):***
 
 ##
-***Video Prueba  (40 BOM / 85 %):***
+***Video Prueba  (Low Perfusion / 99 %):***
 
 ##
-***Video Prueba  (40 BOM / 85 %):***
+***Video Prueba  (140 BPM / 98 %):***
 
 ##
 ***Tabla de verificación de alarmas:***
