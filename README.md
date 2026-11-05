@@ -49,11 +49,11 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 ***Tabla de verificación de alarmas:***
 
 | Prueba | Modo del OxSim | Límite configurado (alto/bajo) | Valor simulado | ¿Alarma activa? (sí/no) | Tiempo de estabilización | Tiempo de respuesta de la alarma | Tiempo total (desde que se conecta el simulador, hasta que enciende la alarma) |
-|---|---|---|---|---|---|---|---|
-| 1 | 95 % 40 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC = 40 bpm<br>SpO₂ = 95 % | Sí | 1:03 min | 7 s | 1:10 min |
-| 2 | 85 % 80 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC = 80 bpm<br>SpO₂ = 85 % | Sí | 1:24 min | 7 s | 1:31 min |
-| 3 | 99 % Low Perf | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | "Low Perfusion"<br>SpO₂ = 99 % | Sí | 17 s | 10 s | 27 s |
-| 4 | 98 % 140 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC = 140 bpm<br>SpO₂ = 98 % | Sí | 16 s | 4 s | 20 s |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | 95 % 40 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC=40bpm <br>SpO₂ = 95 % | Sí | 1:03 min | 7 s | 1:10 min |
+| 2 | 85 % 80 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC=80bpm <br>SpO₂ = 85 % | Sí | 1:24 min | 7 s | 1:31 min |
+| 3 | 99 % Low Perf | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | "Low Perfusion" <br>SpO₂ = 99 % | Sí | 17 s | 10 s | 27 s |
+| 4 | 98 % 140 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC=140bpm <br>SpO₂ = 98 % | Sí | 16 s | 4 s | 20 s |
 
 ##
 ***Tabla de errores:***
@@ -65,7 +65,7 @@ Error absoluto = |valor uMEC 100 − valor simulado|
 Error porcentual = (error absoluto / valor simulado) × 100
 
 | Prueba | Variable | Valor simulado (OxSim) | Valor mostrado (uMEC 100) | Error absoluto | Error porcentual (%) |
-|---|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | FC (bpm) | 40 | 40 |0 | 0 %|
 | 1 | SpO₂ (%) | 95 | 96| 1|1.05263 %|
 | 2 | FC (bpm) | 80 |80 | 0| 0 % |
