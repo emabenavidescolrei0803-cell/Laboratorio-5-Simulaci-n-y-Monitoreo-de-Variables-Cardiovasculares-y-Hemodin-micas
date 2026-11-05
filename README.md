@@ -55,6 +55,26 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 | 3 | 99 % Low Perf | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | "Low Perfusion"<br>SpO₂ = 99 % | Sí | 17 s | 10 s | 27 s |
 | 4 | 98 % 140 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC = 140 bpm<br>SpO₂ = 98 % | Sí | 16 s | 4 s | 20 s |
 
+##
+***Tabla de errores:***
+
+## Tabla de errores de medición
+
+Error absoluto = |valor uMEC 100 − valor simulado|
+
+Error porcentual = (error absoluto / valor simulado) × 100
+
+| Prueba | Variable | Valor simulado (OxSim) | Valor mostrado (uMEC 100) | Error absoluto | Error porcentual (%) |
+|---|---|---|---|---|---|
+| 1 | FC (bpm) | 40 | 40 |0 | 0 %|
+| 1 | SpO₂ (%) | 95 | 96| 1|1.05263 %|
+| 2 | FC (bpm) | 80 |80 | 0| 0 % |
+| 2 | SpO₂ (%) | 85 | 85|0 | 0 %|
+| 3 | FC (bpm) | | 80| | |
+| 3 | SpO₂ (%) | 99 | 100|1 | 1.01010|
+| 4 | FC (bpm) | 140 | 140|0 |0 % |
+| 4 | SpO₂ (%) | 98 | 99|1 | 1.02041 %|
+
 ## Preguntas 
 
 ***Pregunta 1: ¿Cuál es el principio de operación del Pronk OxSim OX-1 para simular una onda pulsátil?***
