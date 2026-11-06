@@ -110,7 +110,7 @@ La medición de la SpO₂ depende de la detección de una señal pulsátil adecu
 
 ## Conclusiones 
 
-
+En esta práctica evaluamos qué tan preciso y confiable es el monitor de signos vitales cuando se enfrenta a diferentes situaciones clínicas, usando el simulador OxSim OX-1 para recrear señales fisiológicas reales. Los resultados mostraron que el equipo es bastante exacto: midió la frecuencia cardíaca sin margen de error (0 %) y los valores de saturación de oxígeno (SpO₂) se mantuvieron muy cerca de lo simulado, con diferencias de apenas el 1.05 %, manteniéndose dentro de los límites de tolerancia aceptables. Además, el sistema de alarmas respondió a tiempo (tomando entre 4 y 10 segundos en activarse) ante eventos de bradicardia, taquicardia e hipoxia, lo que demuestra que cumple bien con las exigencias de seguridad para uso clínico (como la norma IEC 60601-1-8). Hacer este tipo de pruebas nos permite comprobar que la tecnología biomédica está funcionando correctamente para brindar una atención segura al paciente. Como trabajo a futuro, valdría la pena probar el monitor con un número mayor de puntos de medición y bajo situaciones de movimiento o interferencias, para ver qué tan bien filtran la señal sus algoritmos en entornos más complejos.
 
 ## Bibliografías 
 [1] Mindray Bio-Medical Electronics Co., Ltd., uMEC10/uMEC12/uMEC15 Patient Monitor Operator's Manual, Shenzhen, China, 2016. Disponible en ManualsLib.
