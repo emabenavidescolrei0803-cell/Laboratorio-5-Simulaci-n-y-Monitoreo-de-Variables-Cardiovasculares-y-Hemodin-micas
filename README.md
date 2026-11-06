@@ -61,6 +61,16 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 | 3 | 99 % Low Perf | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | "Low Perfusion" <br>SpO₂ = 99 % | Sí | 17 s | 10 s | 27 s |
 | 4 | 98 % 140 bpm | Bajo SpO₂: 90 %<br>Alto SpO₂: 97 % | FC=140bpm <br>SpO₂ = 98 % | Sí | 16 s | 4 s | 20 s |
 
+- Prueba 1 (FC = 40 bpm): Se activó la alarma debido a que la frecuencia cardíaca descendió severamente por debajo de los límites fisiológicos normales (bradicardia severa), a pesar de que la SpO_2(95%) estaba dentro de los límites configurados (90% - 97%).
+- Prueba 2 (SpO_2 = 85%): La alarma se disparó correctamente al violar el límite inferior de saturación (90%), simulando una condición de hipoxia.
+- Prueba 3 (SpO}_2 = 99%, Low Perf): Activó la alarma al superarse el límite superior configurado (97%). En este modo de baja perfusión, la baja amplitud de la onda fotopletismográfica exige al monitor aumentar el nivel de ganancia/filtrado, tardando un poco más en calcular la alarma de respuesta.
+- Prueba 4 (FC = 140 bpm, SpO_2 = 98%): Activó la alarma sonora y visual debido tanto a la taquicardia (140 bpm) como al sobrepaso del límite superior de SpO_2 (97%).
+
+
+Tiempo de Respuesta del Monitor: osciló entre 4 s y 10 s desde el momento en que el monitor procesó la condición de alarma. Esto cumple de manera óptima con los estándares internacionales de seguridad médica (IEC 60601-1-8), garantizando una alerta rápida ante eventos críticos.
+Tiempo de Estabilización: se observó una diferencia notable entre las pruebas 1-2 ( 1 min 03 s - 1 min 24 s) y las pruebas 3-4 ( 16 s - 17 s). Esto se debe a la latencia en el procesamiento digital de señales (DSP) del monitor (algoritmos de promediado de pulsos para filtrar ruido y artefactos de movimiento) y al tiempo que requiere el simulador OxSim para estabilizar la salida de señal tras cambiar la configuración del parámetro.
+
+
 ## ***Tabla de errores:***
 
 Error absoluto = |valor uMEC 100 − valor simulado|
