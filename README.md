@@ -68,6 +68,7 @@ Respecto al índice de perfusión (PI), el simulador ofrece condiciones de perfu
 
 
 Tiempo de Respuesta del Monitor: osciló entre 4 s y 10 s desde el momento en que el monitor procesó la condición de alarma. Esto cumple de manera óptima con los estándares internacionales de seguridad médica (IEC 60601-1-8), garantizando una alerta rápida ante eventos críticos.
+
 Tiempo de Estabilización: se observó una diferencia notable entre las pruebas 1-2 ( 1 min 03 s - 1 min 24 s) y las pruebas 3-4 ( 16 s - 17 s). Esto se debe a la latencia en el procesamiento digital de señales (DSP) del monitor (algoritmos de promediado de pulsos para filtrar ruido y artefactos de movimiento) y al tiempo que requiere el simulador OxSim para estabilizar la salida de señal tras cambiar la configuración del parámetro.
 
 
@@ -87,6 +88,12 @@ Error porcentual = (error absoluto / valor simulado) × 100
 | 3 | SpO₂ (%) | 99 | 100|1 | 1.01010|
 | 4 | FC (bpm) | 140 | 140|0 |0 % |
 | 4 | SpO₂ (%) | 98 | 99|1 | 1.02041 %|
+
+Frecuencia Cardíaca (FC):
+En todas las condiciones probadas (40, 80 y 140 bpm), el monitor mostró exactamente el valor simulado por el OxSim. Esto resultó en un error absoluto de 0 bpm y un error porcentual del 0 %, demostrando una alta precisión en la detección y conteo de la frecuencia de pulso a través del sensor de fotopletismografía (PPG).  
+
+Saturación Periférica de Oxígeno (SpO_2):
+Se observó una desviación estándar constante de +1% respecto a la señal simulada en la mayoría de los casos (95 -> 96 %, 99 -> 100% y 98 -> 99%).   Los errores porcentuales obtenidos (1.01 % a 1.05 %) se mantienen dentro de los rangos normativos de tolerancia clínica estándar para pulsioxímetros, que usualmente aceptan un Error Máximo Permitido (EMP) de ± 2 % a ± 3 % en el rango de 70 % a 100 %.   En la prueba 2 (SpO_2 = 85 %), el valor mostrado fue exactamente de 85 % (0 % de error), lo que confirma un comportamiento lineal y confiable del algoritmo de cálculo del equipo uMEC 100.
 
 ## Preguntas 
 
